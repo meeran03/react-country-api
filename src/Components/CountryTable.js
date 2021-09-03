@@ -5,37 +5,6 @@ import { tableOptions } from '../utils/tableOptions';
 
 
 export default function CountryTable(props) {
-    const columns = [
-        {
-            name: "Name",
-            options: {
-                filter: true,
-                sort: true,
-            }
-        }, 
-        {
-           name : "Region",
-           options: {
-                filter: false,
-                sort: false
-            }
-        }, 
-        {
-            name: 'Area',
-            options: {
-              filter: false,
-              sort : true
-            },
-        }, 
-        {
-            name: 'Population',
-            options: {
-              filter: false,
-              sort : true
-            },
-        }, 
-    ];
-    
     
     return(
         <MUIDataTable 
@@ -55,3 +24,36 @@ export default function CountryTable(props) {
         />
     )
 }
+
+const columns = [
+    {
+        name: "Name",
+        options: {
+            filter: true,
+            sort: true,
+        }
+    }, 
+    {
+       name : "Region",
+       options: {
+            filter: false,
+            sort: false
+        }
+    }, 
+    {
+        name: 'Area',
+        label : "Area (sq. miles)",
+        options: {
+          filter: false,
+          sort : true
+        },
+    }, 
+    {
+        name: 'Population',
+        label : "Population (millions)",
+        options: {
+          filter: false,
+          sort : true
+        },
+    }, 
+];

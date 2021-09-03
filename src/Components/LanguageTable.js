@@ -51,6 +51,7 @@ const columns = [
     },
     {
         name: 'Population',
+        label : "Population (millions)",
         options: {
           filter: false,
           sort : true
