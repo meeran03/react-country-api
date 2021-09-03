@@ -1,6 +1,7 @@
 import React from 'react'
 import MUIDataTable from "mui-datatables";
 import { Avatar } from '@material-ui/core';
+import { tableOptions } from '../utils/tableOptions';
 
 
 function search(nameKey, myArray){
@@ -52,7 +53,7 @@ export default function LanguageTable(props) {
 
         })}
         columns={columns} 
-        options={options} 
+        options={tableOptions} 
         />
     )
 }
@@ -80,15 +81,3 @@ const columns = [
         },
     }, 
 ];
-
-
-const options = {
-  filterType: 'textField',
-  download : false,
-  print : false,
-  resizableColumns : true,
-  rowsPerPageOptions : [5,10,20,100],
-  elevation : 13,
-  selectableRowsHideCheckboxes : true,
-  rowsPerPage : 5
-};

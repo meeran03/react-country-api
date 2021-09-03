@@ -6,3 +6,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.App {
+  background: rgb(228,186,85);
+  background: linear-gradient(90deg, rgba(228,186,85,0.9640231092436975) 35%, rgba(255,192,0,0.8995973389355743) 100%);
+  justify-content : center;
+  align-items : center;
+  display : flex;
+  flex-direction : column;
+  padding :  0px 0px 110px 0px;
+}
+
+.list {
+  align-items : center;
+  justify-content  : center;
+  display :  flex; 
+  flex-direction : column;
+}
+
+.listItem {
+  display : flex; 
+  justify-content : space-between;
+  width: 60%;
+  align-self : center;
+  align-items : center
+}

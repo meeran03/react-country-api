@@ -21,12 +21,15 @@ function App() {
       if (!e.response) {
         alert("Network Error")
       }
+      else {
+        alert(e.message)
+      }
     })
   },[])
 
   if (loading) return <Loader open={loading} />
   return (
-    <div style={styles} >
+    <div className='App' >
       
       <Typography align="center" color="primary" gutterBottom variant='h1'  >
         Country API Tables
@@ -58,13 +61,3 @@ function App() {
 }
 
 export default App;
-
-const styles = {
-  background: 'rgb(228,186,85)',
-  background: 'linear-gradient(90deg, rgba(228,186,85,0.9640231092436975) 35%, rgba(255,192,0,0.8995973389355743) 100%)',
-  justifyContent : "center",
-  alignItems : "center",
-  display : "flex",
-  flexDirection : "column",
-  paddingBottom : 110,
-}

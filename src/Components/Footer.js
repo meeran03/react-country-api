@@ -1,8 +1,8 @@
 import { Avatar, Card, CardContent,Typography } from '@material-ui/core';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import React from 'react'
 
 function Footer(props) {
+
     let data = props.data.filter(item => item.area !=null)
     var min = data.find((item) => item.area == Math.min(...data.map(item => item.area)));
     var max = data.find((item) => item.area == Math.max(...data.map(item => item.area)));
@@ -20,8 +20,8 @@ function Footer(props) {
                     Country Statistics
                 </Typography>
 
-                <div style={styles.list} >
-                    <div style={styles.listItem} >
+                <div className='list' >
+                    <div className='listItem' >
                         <Typography>
                             Country With Max Area
                         </Typography>
@@ -35,7 +35,7 @@ function Footer(props) {
                     </div>
 
 
-                    <div style={styles.listItem} >
+                    <div className='listItem' >
                         <Typography>
                             Country With Min Area
                         </Typography>
@@ -49,7 +49,7 @@ function Footer(props) {
                     </div>
 
 
-                    <div style={styles.listItem} >
+                    <div className='listItem' >
                         <Typography>
                             Average Population
                         </Typography>
@@ -67,20 +67,3 @@ function Footer(props) {
 }
 
 export default Footer
-
-const styles = {
-    list : {
-        alignItems : "center",
-        justifyContent : 'center',
-        display :  "flex", 
-        flexDirection : "column"
-    },
-    listItem : {
-        display : "flex", 
-        justifyContent : "space-between",
-        width: '60%',
-        alignSelf : "center",
-        alignItems : "center"
-    }
-
-}
