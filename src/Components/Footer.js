@@ -2,12 +2,15 @@ import { Avatar, Card, CardContent,Typography } from '@material-ui/core';
 import React from 'react'
 
 function Footer(props) {
-
+    // Imputing the data by discarding the null values
     let data = props.data.filter(item => item.area !=null)
+
+    // Finding Min & Max
     var min = data.find((item) => item.area == Math.min(...data.map(item => item.area)));
     var max = data.find((item) => item.area == Math.max(...data.map(item => item.area)));
-    let sum=0;
-    let total=0;
+    
+    // Finding the average population
+    let sum=0,total=0;
     props.data.filter(item => item.population!= null).map(item => {
         sum += item.population
         total++;
