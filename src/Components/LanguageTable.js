@@ -1,7 +1,7 @@
 import React from 'react'
 import MUIDataTable from "mui-datatables";
 import { tableOptions } from '../utils/tableOptions';
-import { processLanguagesArr } from '../utils/search';
+import { processLanguagesArr } from '../utils/tableFunctions';
 
 
 
