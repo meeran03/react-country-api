@@ -4,8 +4,6 @@ import { tableOptions } from '../utils/tableOptions';
 import { processLanguagesArr } from '../utils/tableFunctions';
 
 
-
-
 export default function LanguageTable(props) {
 
     const [languages, setLanguages] = React.useState([]);
