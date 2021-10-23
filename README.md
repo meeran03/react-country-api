@@ -16,4 +16,4 @@ This is one of the simplest yet most useful projects that I have made. It has co
 
 ![Material UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)
 ![ReactJS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Axios](https://img.shields.io/badge/axios-REST-orange??style=for-the-badge&logo=axios)
+![Axios](https://img.shields.io/badge/axios-REST-orange?style=for-the-badge&logo=axios)
